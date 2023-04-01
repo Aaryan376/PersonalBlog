@@ -16,6 +16,15 @@
     border-radius: 10px;
 }
 
+.read-btn{
+    background-color: #B3005E;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
 @media (max-width: 760px){
     .card-container{
         display: grid;
