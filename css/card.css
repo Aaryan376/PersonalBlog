@@ -12,7 +12,7 @@
     padding: 0.5rem;
 }
 
-.card>img{
+.card > .card-img{
     border-radius: 10px;
 }
 
