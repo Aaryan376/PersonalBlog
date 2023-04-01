@@ -1,0 +1,35 @@
+.footer-container{
+    display:flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding: 0 1rem;
+    padding-bottom: 2rem;
+}
+#subscribe{
+    height: 25px;
+    width: 11rem;
+}
+#subscribe:focus{
+    outline:none;
+}
+
+.copyright{
+    padding-top: 3rem;
+}
+.subscribe-btn{
+    background-color: #B3005E;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+@media (max-width: 760px){
+    .footer-container{
+        display: block;
+    }
+    .copyright{
+        display: block;
+        margin-top: 1rem;
+    }
+}

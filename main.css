@@ -1,0 +1,64 @@
+@import url(css/card.css);
+@import url(css/blogpost.css);
+@import url(css/footer.css);
+
+
+.blog-container{
+    display: grid;
+    grid-template-columns: 30px repeat(7,1fr);
+    grid-auto-rows: minmax(50px,auto);
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "main main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+    grid-gap: 1.5rem;
+    font-family: sans-serif;
+}
+.blog-header{
+    grid-area: hd;
+}
+.main-content{
+    grid-area: main;
+}
+.footer{
+    grid-area: ft;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+    padding: 0 1rem;
+}
+
+.blog{
+    color: #060047;
+}
+
+.nav-menu{
+    display: flex;
+    list-style-type: none;
+    padding-top: 0.3rem;
+    font-weight: bold;
+}
+
+
+li{
+    margin-right: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-link{
+    text-decoration: none;
+    color: rose;
+}
+
+
+ @media (max-width: 600px){
+    .nav-menu{
+        display:none;
+    }
+ }

@@ -1,0 +1,123 @@
+@import 'footer.css';
+.blog-container{
+    display: grid;
+    grid-template-columns: 30px repeat(7,1fr);
+    grid-auto-rows: minmax(50px,auto);
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "main main main main main main sd sd"
+    "ft ft ft ft ft ft ft ft";
+    grid-gap: 1.5rem;
+    font-family: sans-serif;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    grid-area: hd;
+    padding: 1rem;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.blog-title{
+    margin-top:0;
+    margin-bottom:0;
+    color: #368B85;
+}
+a{
+    text-decoration: none;
+}
+.fa-search{
+    color: #146C94;
+}
+.main-section{
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    grid-area: main;
+}
+.sidemenu{
+    text-align: justify;
+    text-justify: inter-word;
+    grid-area: sd;
+    margin-right: 2rem;
+}
+.profile-img{
+    float: left;
+    shape-outside: ellipse();
+    margin-right: 1rem;
+}
+.fa-twitter{
+    color: #62CDFF;
+}
+.fa-linkedin-in{
+   color: #0A66A2;
+}
+.fa-github{
+    color:#000000;
+}
+.footer-container{
+    display: flex;
+    justify-content: space-between;
+    grid-area:ft;
+    margin: 0 2rem;
+    padding-bottom: 1rem;
+}
+
+#subscribe{
+    height: 25px;
+    width: 11rem;
+}
+#subscribe:focus{
+    outline:none;
+}
+.subscribe-btn{
+    background-color: #B3005E;
+    color: white;
+    border:none;
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin-left: 0.1rem;
+}
+.copyright{
+    padding-top: 3rem;
+}
+
+.fa-brands{
+    margin-right: 1rem;
+}
+
+.blog-detail{
+    color: gray;
+}
+
+@media (max-width: 760px){
+    .blog-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "main main main main main main main main"
+        "sd sd sd sd sd sd sd sd"
+        "ft ft ft ft ft ft ft ft";
+
+    }
+    .sidemenu{
+        margin-left: 2rem;
+    }
+    .footer-container{
+        display: block;
+    }
+    .copyright{
+        display: block;
+    }
+    .subscribe-btn{
+        margin-left:0;
+        margin-top: 0.3rem;
+    }
+    .subscribe-link{
+        display:none;
+    }
+
+}
